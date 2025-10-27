@@ -1,17 +1,51 @@
-header{
-    background-image: url(../img/wall.png);
+:root {
+  --color-date: rgb(91, 91, 91);
+  --color-title: rgb(0, 0, 0);
 }
 
-h1{
-    font-family:  'Edu Tas Beginner', sans-serif;
-    font-size: 4.5rem;
-    font-weight: bold;
-    text-shadow: 1px 0 black, -1px 0 black; /*Aggiunge ombra ai lati per simulare "più grassetto*/
-    
-    
+header {
+  background-image: url(../img/wall.png);
+}
+
+h1 {
+  font-family: "Edu Tas Beginner", sans-serif;
+  font-size: 4.5rem;
+  font-weight: bold;
+  text-shadow: 1px 0 black, -1px 0 black; /*Aggiunge ombra ai lati per simulare "più grassetto*/
 }
 /*HEADER SECTION*/
 
+main {
+  background-image: url("../img/cork.png");
+}
 
+.date {
+  font-family: "Sometype Mono", "monospace";
+  color: var(--color-date);
+  margin-top: 0.45rem;
+}
 
+.title {
+  position: relative;
+  top: -5px;
+  font-size: 1.45rem;
+  font-weight: 500;
+  font-style: italic;
+}
 
+.card {
+  position: relative;
+  display: inline-block;
+}
+
+.pin {
+  position: absolute;
+  top: -3%;
+  left: 45%;
+}
+
+.card-img-top {
+  width: 11rem;
+  height: auto;
+  object-fit: cover;
+}
