@@ -1,0 +1,22 @@
+header{
+    background-image: url(../img/wall.png);
+    padding-top: 1.9rem;
+    padding-bottom: 1.9rem;
+   
+    
+    
+}
+
+h1{
+    font-family:  'Edu Tas Beginner', sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-shadow: 1px 0 black, -1px 0 black; /*Aggiunge ombra ai lati per simulare "più grassetto*/
+    
+    
+}
+
+.head-container{
+    width: 30.85%;
+    margin: auto;
+}
