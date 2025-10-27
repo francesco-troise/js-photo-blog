@@ -1,10 +1,5 @@
 header{
     background-image: url(../img/wall.png);
-    padding-top: 1.9rem;
-    padding-bottom: 1.9rem;
-   
-    
-    
 }
 
 h1{
@@ -15,8 +10,8 @@ h1{
     
     
 }
+/*HEADER SECTION*/
 
-.head-container{
-    width: 30.85%;
-    margin: auto;
-}
+
+
+
