@@ -5,13 +5,13 @@
 const fragment = document.createDocumentFragment();
 const row = document.getElementById("row");
 
-const array_post = [];
+
 
 axios
   .get("https://lanciweb.github.io/demo/api/pictures/")
 
   .then((response) => {
-    array_post.push(...response.data);
+    const array_post =response.data;
 
     array_post.forEach((post) => {
       const col = document.createElement("div");
@@ -25,6 +25,7 @@ axios
       const img = document.createElement("img");
       img.classList.add("card-img-top", "rounded-0");
       img.src = post.url;
+      img.id = post.id
       card.appendChild(img);
 
       const card_body = document.createElement("div");
@@ -65,7 +66,12 @@ axios
 
     for (let img of card_img) {
       img.addEventListener("click", () => {
-        overlay_box.classList.toggle("d-none");
+        overlay_box.classList.toggle("d-none")
+        console.log(card_img);
+        img_overlay.src = img.src
       });
     }
+  
+
+
   });
