@@ -2,6 +2,8 @@
   --color-date: rgb(91, 91, 91);
   --color-title: rgb(0, 0, 0);
 }
+/*ROOT*/
+
 
 header {
   background-image: url(../img/wall.png);
@@ -14,7 +16,6 @@ h1 {
   text-shadow: 1px 0 black, -1px 0 black; /*Aggiunge ombra ai lati per simulare "più grassetto*/
 }
 /*HEADER SECTION*/
-
 
 
 .date {
@@ -47,10 +48,13 @@ h1 {
   height: auto;
   object-fit: cover;
 }
+/*CARD SECTION*/
+
 
 main {
   background-image: url("../img/cork.png");
   position: relative;
+  padding-bottom: 2rem;
 }
 
 #overlay {
@@ -63,7 +67,6 @@ main {
   bottom: 0;
   background-color: rgba(0,0,0,0.5);  
   cursor: pointer; 
-  
 }
 
 #btn-overlay{
@@ -81,7 +84,8 @@ main {
   left: 32.5%;
   top: 17.5%;;
   opacity: 0.85;
-  
-  
 }
+/*OVERLAY SECTION*/
+
+
 

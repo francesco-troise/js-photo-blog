@@ -5,11 +5,14 @@
 const fragment = document.createDocumentFragment();
 const row = document.getElementById("row");
 
+const array_post = [];
+
 axios
   .get("https://lanciweb.github.io/demo/api/pictures/")
 
   .then((response) => {
-    const array_post = response.data;
+    array_post.push(...response.data);
+
     array_post.forEach((post) => {
       const col = document.createElement("div");
       col.classList.add("col-lg-4", "col-md-6", "col-sm-12");
@@ -48,4 +51,21 @@ axios
     });
 
     row.appendChild(fragment);
+    //CREATION CARD
+
+    const card_img = document.getElementsByClassName("card-img-top");
+
+    const overlay_box = document.getElementById("overlay");
+    const btn_overlay = document.getElementById("btn-overlay");
+    const img_overlay = document.getElementById("img-overlay");
+
+    btn_overlay.addEventListener("click", function () {
+      overlay_box.classList.toggle("d-none");
+    });
+
+    for (let img of card_img) {
+      img.addEventListener("click", () => {
+        overlay_box.classList.toggle("d-none");
+      });
+    }
   });
